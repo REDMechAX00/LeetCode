@@ -59,6 +59,7 @@ fun addTwoNumbers(_l1: ListNode?, _l2: ListNode?): ListNode? {
 }
 
 //Recursion
+@Suppress("unused")
 fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
     var l1 = _l1
     var l2 = _l2
@@ -83,7 +84,6 @@ fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
         addNumbers(l1, l2, curr, carry)
     }
 }
-
 
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
