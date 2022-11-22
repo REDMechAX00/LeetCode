@@ -33,9 +33,9 @@ fun main() {
     }
 }
 
-fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
-    var l1 = l1
-    var l2 = l2
+fun addTwoNumbers(_l1: ListNode?, _l2: ListNode?): ListNode? {
+    var l1 = _l1
+    var l2 = _l2
     val dummyHead = ListNode(0)
     var curr: ListNode? = dummyHead
     var carry = 0
@@ -59,11 +59,11 @@ fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
 }
 
 //Recursion
-fun addNums(l1: ListNode?, l2: ListNode?, curr: ListNode?, carry: Int) {
-    var l1 = l1
-    var l2 = l2
-    var carry = carry
-    var curr = curr
+fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
+    var l1 = _l1
+    var l2 = _l2
+    var carry = _carry
+    var curr = _curr
     val val1 = l1?.`val` ?: 0
     val val2 = l2?.`val` ?: 0
 
@@ -80,7 +80,7 @@ fun addNums(l1: ListNode?, l2: ListNode?, curr: ListNode?, carry: Int) {
     if (l2 != null) l2 = l2.next
 
     if (l1 != null || l2 != null || carry != 0) {
-        addNums(l1, l2, curr, carry)
+        addNumbers(l1, l2, curr, carry)
     }
 }
 
