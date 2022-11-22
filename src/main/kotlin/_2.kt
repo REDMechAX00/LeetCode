@@ -27,6 +27,10 @@ fun main() {
     }
 
     printlnListNode(addTwoNumbers(l1, l2)!!)
+
+    File("output.txt").printWriter().use { out ->
+        out.println()
+    }
 }
 
 fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
