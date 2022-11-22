@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class _4 {
+public class _4_Median_of_Two_Sorted_Arrays {
 
     public static void main(String[] arguments) {
         int[] nums1 = new int[2];

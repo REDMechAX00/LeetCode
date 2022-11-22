@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class _1 {
+public class _1_Two_Sum {
 
     public static void main(String[] arguments) {
 
