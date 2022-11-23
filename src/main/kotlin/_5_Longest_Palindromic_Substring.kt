@@ -5,7 +5,8 @@ fun main() {
     println(longestPalindrome(s))
 }
 
-fun longestPalindrome(s: String): String {
+@Suppress("SameParameterValue")
+private fun longestPalindrome(s: String): String {
     if (s.isEmpty()) {
         return ""
     }
@@ -29,7 +30,7 @@ fun longestPalindrome(s: String): String {
     return s.substring(start, end + 1)
 }
 
-fun findLongestPalindromeRange(s: String, left: Int, right: Int): Int {
+private fun findLongestPalindromeRange(s: String, left: Int, right: Int): Int {
     var l = left
     var r = right
 

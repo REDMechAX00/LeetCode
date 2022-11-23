@@ -13,7 +13,8 @@ public class _1_Two_Sum {
         System.out.println(Arrays.toString(twoSum(nums, 9)));
     }
 
-    public static int[] twoSum ( int[] nums, int target){
+    @SuppressWarnings("SameParameterValue")
+    private static int[] twoSum ( int[] nums, int target){
 
         int[] solution = new int[2];
 

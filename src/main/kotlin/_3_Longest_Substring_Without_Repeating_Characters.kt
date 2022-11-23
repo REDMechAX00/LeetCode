@@ -6,7 +6,8 @@ fun main() {
 
 }
 
-fun lengthOfLongestSubstring(s: String): Int {
+@Suppress("SameParameterValue")
+private fun lengthOfLongestSubstring(s: String): Int {
 
     var result = 0
 

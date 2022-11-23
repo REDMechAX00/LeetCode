@@ -13,7 +13,7 @@ public class _4_Median_of_Two_Sorted_Arrays {
         System.out.println(findMedianSortedArrays(nums1, nums2) + "");
     }
 
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    private static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
         int[] allNums = new int[nums1.length + nums2.length];
         int count = 0;

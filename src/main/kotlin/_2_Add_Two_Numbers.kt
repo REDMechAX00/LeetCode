@@ -33,7 +33,7 @@ fun main() {
     }
 }
 
-fun addTwoNumbers(_l1: ListNode?, _l2: ListNode?): ListNode? {
+private fun addTwoNumbers(_l1: ListNode?, _l2: ListNode?): ListNode? {
     var l1 = _l1
     var l2 = _l2
     val dummyHead = ListNode(0)
