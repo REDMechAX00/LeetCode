@@ -8,7 +8,8 @@ fun main() {
     println("$result")
 }
 
-fun reverse(x: Int): Int {
+@Suppress("SameParameterValue")
+private fun reverse(x: Int): Int {
     if (x >= (-2.0).pow(31) && x <= (2.0).pow(31) - 1) {
         var input = abs(x)
         var reverse = 0L
