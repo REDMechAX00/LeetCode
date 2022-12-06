@@ -1,5 +1,9 @@
 import java.io.File
 
+class ListNode(var `val`: Int) {
+    var next: ListNode? = null
+}
+
 fun main() {
     val bufferedReader = File("input.txt").bufferedReader()
     val lineList = mutableListOf<String>()
@@ -60,7 +64,7 @@ private fun addTwoNumbers(_l1: ListNode?, _l2: ListNode?): ListNode? {
 
 //Recursion
 @Suppress("unused")
-fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
+private fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
     var l1 = _l1
     var l2 = _l2
     var carry = _carry
@@ -85,19 +89,15 @@ fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry: Int) {
     }
 }
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
-
 //My function for create l1 & l2
-fun printlnListNode(ln: ListNode) {
+private fun printlnListNode(ln: ListNode) {
     println(ln.`val`)
     if (ln.next != null) {
         printlnListNode(ln.next!!)
     }
 }
 
-fun addAll(ln: ListNode, items: List<String>, count: Int) {
+private fun addAll(ln: ListNode, items: List<String>, count: Int) {
     val newNode = ListNode(items[count].toInt())
     ln.next = newNode
     if (count + 1 < items.size) {
