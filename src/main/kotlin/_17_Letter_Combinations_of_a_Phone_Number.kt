@@ -4,7 +4,7 @@ fun main() {
 }
 
 @Suppress("SameParameterValue", "unused")
-fun letterCombinations(digits: String): List<String> {
+private fun letterCombinations(digits: String): List<String> {
     val combs = arrayListOf<String>()
 
     val lettersMap: HashMap<Char, String> = hashMapOf()
@@ -25,7 +25,7 @@ fun letterCombinations(digits: String): List<String> {
 }
 
 @Suppress("SameParameterValue", "unused")
-fun makeCombination(combs: ArrayList<String>, letters: String): List<String> {
+private fun makeCombination(combs: ArrayList<String>, letters: String): List<String> {
     val newCombs = arrayListOf<String>()
 
     if (combs.isEmpty()) {

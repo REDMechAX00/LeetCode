@@ -1,7 +1,5 @@
 fun main() {
-
     val s = "babbad"
-
     println(longestPalindrome(s))
 }
 

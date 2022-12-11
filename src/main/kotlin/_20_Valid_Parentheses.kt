@@ -4,7 +4,7 @@ fun main() {
 }
 
 @Suppress("SameParameterValue", "unused")
-fun isValid(s: String): Boolean {
+private fun isValid(s: String): Boolean {
     val validChars = listOf('(', ')', '[', ']', '{', '}')
     var result = s
 

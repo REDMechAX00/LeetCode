@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4abe49e0-269a-463e-b205-a7f14e344935" name="Changes" comment="Number of solved problems: 15">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_16_3Sum_Closest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_17_Letter_Combinations_of_a_Phone_Number.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_18_4Sum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_19_Remove_Nth_Node_From_End_of_List.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_20_Valid_Parentheses.kt" afterDir="false" />
+    <list default="true" id="4abe49e0-269a-463e-b205-a7f14e344935" name="Changes" comment="Number of solved problems: 20">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_21_Merge_Two_Sorted_Lists.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_22_Generate_Parentheses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_23_Merge_k_Sorted_Lists.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_24_Swap_Nodes_in_Pairs.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_25_Reverse_Nodes_in_k-Group.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_26_Remove_Duplicates_from_Sorted_Array.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_27_Remove_Element.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_28_Find_the_Index_of_the_First_Occurrence_in_a_String.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_29_Divide_Two_Integers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_30_Substring_with_Concatenation_of_All_Words.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/mListNode.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_17_Letter_Combinations_of_a_Phone_Number.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_17_Letter_Combinations_of_a_Phone_Number.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_18_4Sum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_18_4Sum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_19_Remove_Nth_Node_From_End_of_List.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_19_Remove_Nth_Node_From_End_of_List.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_20_Valid_Parentheses.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_20_Valid_Parentheses.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2_Add_Two_Numbers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2_Add_Two_Numbers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_3_Longest_Substring_Without_Repeating_Characters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_3_Longest_Substring_Without_Repeating_Characters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_5_Longest_Palindromic_Substring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_5_Longest_Palindromic_Substring.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -46,12 +58,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maksimilian/IntelliJ IDEA/LeetCode&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maksimilian/IntelliJ IDEA/LeetCode/src/main/kotlin&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maksimilian\IntelliJ IDEA\LeetCode\src\main\kotlin" />
       <recent name="C:\Users\Maksimilian\IntelliJ IDEA\LeetCode\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -144,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670088408083</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Number of solved problems: 20">
+      <created>1670333193261</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670333193261</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +186,8 @@
     <MESSAGE value="Number of solved problems: 9" />
     <MESSAGE value="Number of solved problems: 12" />
     <MESSAGE value="Number of solved problems: 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Number of solved problems: 15" />
+    <MESSAGE value="Number of solved problems: 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Number of solved problems: 20" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode$GoZeroesToBottomKt.ic" NAME="GoZeroesToBottomKt Coverage Results" MODIFIED="1665762757466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

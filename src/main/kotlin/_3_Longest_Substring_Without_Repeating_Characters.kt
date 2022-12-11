@@ -1,9 +1,6 @@
 fun main() {
-
     val s = "abcabcbbbb"
-
     println(lengthOfLongestSubstring(s).toString())
-
 }
 
 @Suppress("SameParameterValue")

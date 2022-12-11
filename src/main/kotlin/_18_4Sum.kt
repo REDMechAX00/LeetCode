@@ -5,7 +5,7 @@ fun main() {
 }
 
 @Suppress("SameParameterValue", "unused")
-fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
+private fun fourSum(nums: IntArray, target: Int): List<List<Int>> {
     val results = HashSet<List<Int>>()
     if (nums.size < 4) {
         return results.toList()

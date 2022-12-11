@@ -1,9 +1,5 @@
 import java.io.File
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
-
 fun main() {
     val bufferedReader = File("input.txt").bufferedReader()
     val lineList = mutableListOf<String>()
@@ -86,14 +82,6 @@ private fun addNumbers(_l1: ListNode?, _l2: ListNode?, _curr: ListNode?, _carry:
 
     if (l1 != null || l2 != null || carry != 0) {
         addNumbers(l1, l2, curr, carry)
-    }
-}
-
-//My function for create l1 & l2
-private fun printlnListNode(ln: ListNode) {
-    println(ln.`val`)
-    if (ln.next != null) {
-        printlnListNode(ln.next!!)
     }
 }
 
