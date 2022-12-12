@@ -1,11 +1,50 @@
 fun main() {
-    val head = createLinkedList(listOf(1, 2, 3, 4, 5))
+    val head = createLinkedList(listOf(1, 2))
     val k = 2
     printlnListNode(reverseKGroup(head, k))
 }
 
 @Suppress("SameParameterValue", "unused")
 private fun reverseKGroup(_head: ListNode?, k: Int): ListNode? {
+    if (_head == null) return null
+    if (k == 1) return _head
+
+    val head = ListNode(0)
+    head.next = _head
+
+    var nextPart: ListNode? = head.next
+    var slider: ListNode? = head
+    var start = head.next
+
+    while (nextPart != null) {
+        for (i in 0 until k) {
+            nextPart = nextPart?.next
+            if (i != k - 1 && nextPart == null) return head.next
+        }
+
+        slider?.next = recursion(start, start?.next, k, 0)
+
+        start?.next = nextPart
+        slider = start
+
+        start = nextPart
+    }
+
+    return head.next
+}
+
+@Suppress("SameParameterValue", "unused")
+private fun recursion(start: ListNode?, end: ListNode?, k: Int, i: Int): ListNode? {
+    if (i == k - 1) return start
+    val next = end?.next
+    end?.next = start
+    return recursion(end, next, k, i + 1)
+}
+
+
+//Second variant
+@Suppress("SameParameterValue", "unused")
+private fun reverseKGroupSecond(_head: ListNode?, k: Int): ListNode? {
     if (_head == null) return null
     if (k == 1) return _head
 
